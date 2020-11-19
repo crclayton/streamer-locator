@@ -31,7 +31,7 @@ def get_ip_location(ip):
 for line in iter(process.stdout.readline, b""):
     columns = str(line).split(" ")
 
-    if "->" in columns and "SKYPE" in columns:
+    if "->" in columns and ("SKYPE" in columns or "UDP" in columns):
         src_ip = columns[columns.index("->") - 1]
 
         if src_ip == my_ip:
