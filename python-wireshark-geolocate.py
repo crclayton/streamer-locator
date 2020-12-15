@@ -1,3 +1,5 @@
+# pip3 install maxminddb-geolite2
+
 from geolite2 import geolite2
 import socket, subprocess 
 
