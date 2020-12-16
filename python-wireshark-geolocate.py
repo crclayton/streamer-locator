@@ -5,7 +5,7 @@ import socket, subprocess
 
 cmd = r"C:\Program Files\Wireshark\tshark.exe"
 # if ethernet try
-cmd = r"C:\Program Files\Wireshark\tshark.exe -i ethernet"
+# cmd = r"C:\Program Files\Wireshark\tshark.exe -i ethernet"
 
 process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 my_ip = socket.gethostbyname(socket.gethostname())
